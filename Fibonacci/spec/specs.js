@@ -8,7 +8,7 @@ describe('fibonacci', function() {
   });
 
   it('returns the value of the Fibonacci sequence at the number that user inputs', function() {
-    fibonacci(15).should.equal(377);
+    fibonacci(10).should.equal(34);
   });
 });
 
