@@ -10,6 +10,14 @@ describe('fibonacci', function() {
   it('returns the value of the Fibonacci sequence at the number that user inputs', function() {
     fibonacci(10).should.equal(34);
   });
+
+  it('returns false if user inputs a negative number', function() {
+    fibonacci(-1).should.equal(false);
+  });
+
+  it('returns false if user inputs a number with decimal', function() {
+    fibonacci(1.5).should.equal(false);
+  });
 });
 
 
