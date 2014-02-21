@@ -9,3 +9,17 @@ var fibonacci = function(numberInput) {
     return fibonacci(numberInput-1) + fibonacci(numberInput-2)
   };
 };
+
+
+$(document).ready(function() {
+  $("form#fibonacci").submit(function(event) {
+    var numbers = ($("input#numbers").val());
+    var result = fibonacci(numbers);
+
+    $("#result").show();
+    $(".results").text(result);
+    
+    this.reset();
+    event.preventDefault();
+  });
+});
