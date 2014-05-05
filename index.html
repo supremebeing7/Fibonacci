@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title> Find the Fibonacci number </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Enter a number to to find its Fibonacci number</h1>
+      <h3>
+        The Fibonacci sequence adds the last two numbers in the sequence to generate the next.
+        Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...
+        Example: If you enter '4', the result will be 2, the 4th numebr in the sequence.
+        (Please don't enter negatives or decimals!)
+      </h3>
+
+      <form id="fibonacci">
+        <div class="form-group">
+          <label for="numbers">Enter your number here:</label>
+          <input id="numbers" type="text">
+        </div>
+        <div class="button">
+          <button type="submit" class="btn">Get results!</button>
+        </div>
+      </form>
+
+      <div id="result">
+        <p>Your number factorial is <span class="results"></span>.
+      </div>
+    </div>
+
+  </body>
+
+</html>
+
